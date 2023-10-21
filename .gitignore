@@ -35,3 +35,15 @@
 .vscode
 .DS_Store
 *.dSYM
+
+# CMake
+CMakeFiles
+CMakeCache.txt
+CMakeScripts
+CTestTestfile.cmake
+cmake_install.cmake
+install_manifest.txt
+Makefile
+
+# binary
+sfml_basics

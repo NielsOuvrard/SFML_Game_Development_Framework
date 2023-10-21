@@ -1,16 +1,9 @@
 /*
-**       ::::::::   ::::::::  :::        ::::::::   ::::::::
-**     :+:    :+: :+:    :+: :+:       :+:    :+: :+:    :+:
-**    +:+    +:+ +:+        +:+       +:+    +:+ +:+
-**    +#++:++#  +#+        +#+       +#+    +:+ +#++:++#++
-**  +#+    +#+ +#+        +#+       +#+    +#+        +#+
-** #+#    #+# #+#    #+# #+#       #+#    #+# #+#    #+#
-** ########   ########  ########## ########   ########
-**
-** Created the 02/10/2019
+** Created the 02/10/2023
 */
 
 #include "IGameState.hpp"
+#include "Player.hpp"
 
 #ifndef GAMESTATE_HPP
 #define GAMESTATE_HPP
@@ -28,6 +21,7 @@ public:
     void render(sf::RenderWindow &window) override;
 
 private:
+    Player *player;
 };
 
 #endif // GAMESTATE_HPP

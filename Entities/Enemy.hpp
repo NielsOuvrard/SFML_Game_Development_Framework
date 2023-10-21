@@ -1,13 +1,5 @@
 /*
-**       ::::::::   ::::::::  :::        ::::::::   ::::::::
-**     :+:    :+: :+:    :+: :+:       :+:    :+: :+:    :+:
-**    +:+    +:+ +:+        +:+       +:+    +:+ +:+
-**    +#++:++#  +#+        +#+       +#+    +:+ +#++:++#++
-**  +#+    +#+ +#+        +#+       +#+    +#+        +#+
-** #+#    #+# #+#    #+# #+#       #+#    #+# #+#    #+#
-** ########   ########  ########## ########   ########
-**
-** Created the 02/10/2019
+** Created the 02/10/2023
 */
 
 #include "IEntity.hpp"
@@ -19,5 +11,12 @@ public:
     void update() override;
     void render(sf::RenderWindow &window) override;
     sf::Sprite getSprite() const override;
-    // Enemy-specific functionalities
+
+private:
+    sf::Sprite sprite;
+    sf::Texture texture;
+    sf::IntRect rect;
+    sf::Clock clock;
+    bool moveUp;
+    int currentFrame;
 };

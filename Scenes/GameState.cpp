@@ -1,13 +1,5 @@
 /*
-**       ::::::::   ::::::::  :::        ::::::::   ::::::::
-**     :+:    :+: :+:    :+: :+:       :+:    :+: :+:    :+:
-**    +:+    +:+ +:+        +:+       +:+    +:+ +:+
-**    +#++:++#  +#+        +#+       +#+    +:+ +#++:++#++
-**  +#+    +#+ +#+        +#+       +#+    +#+        +#+
-** #+#    #+# #+#    #+# #+#       #+#    #+# #+#    #+#
-** ########   ########  ########## ########   ########
-**
-** Created the 02/10/2019
+** Created the 02/10/2023
 */
 
 #include "GameState.hpp"
@@ -23,6 +15,7 @@
 // Constructor
 GameState::GameState()
 {
+    player = new Player();
     // Load resources, initialize variables, and set up the main menu here
 }
 
@@ -55,4 +48,5 @@ void GameState::render(sf::RenderWindow &window)
 {
     // window.clear(sf::Color::Black);
     // window.display();
+    window.draw(player->getSprite());
 }

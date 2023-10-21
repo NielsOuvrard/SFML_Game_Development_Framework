@@ -1,13 +1,5 @@
 /*
-**       ::::::::   ::::::::  :::        ::::::::   ::::::::
-**     :+:    :+: :+:    :+: :+:       :+:    :+: :+:    :+:
-**    +:+    +:+ +:+        +:+       +:+    +:+ +:+
-**    +#++:++#  +#+        +#+       +#+    +:+ +#++:++#++
-**  +#+    +#+ +#+        +#+       +#+    +#+        +#+
-** #+#    #+# #+#    #+# #+#       #+#    #+# #+#    #+#
-** ########   ########  ########## ########   ########
-**
-** Created the 02/10/2019
+** Created the 02/10/2023
 */
 
 #include "Enemy.hpp"
@@ -29,5 +21,5 @@ void Enemy::render(sf::RenderWindow &window)
 
 sf::Sprite Enemy::getSprite() const
 {
-    // Return the enemy's sprite here
+    return sprite;
 }
