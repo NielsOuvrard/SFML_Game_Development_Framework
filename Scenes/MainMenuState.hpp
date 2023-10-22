@@ -2,16 +2,16 @@
 ** Created the 02/10/2023
 */
 
+#include "IGameState.hpp"// Include the base game state class
 #include <SFML/Graphics.hpp>
-#include "IGameState.hpp" // Include the base game state class
 
 #ifndef GAMEOVERSTATE_HPP
 #include "GameOverState.hpp"
-#endif // GAMEOVERSTATE_HPP
+#endif// GAMEOVERSTATE_HPP
 
 #ifndef GAME_HPP
 #include "Game.hpp"
-#endif // GAME_HPP
+#endif// GAME_HPP
 
 #ifndef MAINMENUSTATE_HPP
 #define MAINMENUSTATE_HPP
@@ -34,4 +34,4 @@ private:
     // Add any other private members or methods relevant to the main menu
 };
 
-#endif // MAINMENUSTATE_HPP
+#endif// MAINMENUSTATE_HPP

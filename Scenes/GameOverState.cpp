@@ -9,8 +9,7 @@
 GameOverState::GameOverState()
 {
     // Load resources, initialize variables, and set up the game over screen here
-    if (!font.loadFromFile("assets/fonts/Identidad-ExtraBold.otf"))
-    {
+    if (!font.loadFromFile("assets/fonts/Identidad-ExtraBold.otf")) {
         // Handle font loading error
     }
 
@@ -30,10 +29,8 @@ GameOverState::GameOverState()
 // Handle user input
 void GameOverState::handleInput(sf::Event &event, Game &game)
 {
-    if (event.type == sf::Event::KeyPressed)
-    {
-        if (event.key.code == sf::Keyboard::R)
-        {
+    if (event.type == sf::Event::KeyPressed) {
+        if (event.key.code == sf::Keyboard::R) {
             // Restart the game when R key is pressed
             // You may want to implement a state manager for this
 

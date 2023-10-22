@@ -3,16 +3,15 @@
 */
 
 #include "MainMenuState.hpp"
+#include "GameState.hpp"
 #include <iostream>
 #include <memory>
-#include "GameState.hpp"
 
 // Constructor
 MainMenuState::MainMenuState()
 {
     // Load resources, initialize variables, and set up the main menu here
-    if (!font.loadFromFile("./assets/fonts/Identidad-ExtraBold.otf"))
-    {
+    if (!font.loadFromFile("./assets/fonts/Identidad-ExtraBold.otf")) {
         // Handle font loading error
     }
 
@@ -32,10 +31,8 @@ MainMenuState::MainMenuState()
 // Handle user input
 void MainMenuState::handleInput(sf::Event &event, Game &game)
 {
-    if (event.type == sf::Event::KeyPressed)
-    {
-        if (event.key.code == sf::Keyboard::Enter)
-        {
+    if (event.type == sf::Event::KeyPressed) {
+        if (event.key.code == sf::Keyboard::Enter) {
             std::cout << "Enter pressed" << std::endl;
 
             std::unique_ptr<IGameState> gameState = std::make_unique<GameState>();

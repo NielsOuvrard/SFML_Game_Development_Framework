@@ -5,8 +5,8 @@
 #ifndef GRAPHICS_HPP
 #define GRAPHICS_HPP
 
+#include "IEntity.hpp"// Include your entity class definition
 #include <SFML/Graphics.hpp>
-#include "IEntity.hpp" // Include your entity class definition
 
 class Graphics
 {
@@ -31,4 +31,4 @@ private:
     // Add any other private members or methods relevant to graphics
 };
 
-#endif // GRAPHICS_HPP
+#endif// GRAPHICS_HPP

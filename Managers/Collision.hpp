@@ -5,8 +5,8 @@
 #ifndef COLLISION_HPP
 #define COLLISION_HPP
 
+#include "IEntity.hpp"// Include your entity class definition
 #include <SFML/Graphics.hpp>
-#include "IEntity.hpp" // Include your entity class definition
 
 class Collision
 {
@@ -18,4 +18,4 @@ public:
     static void resolveCollision(IEntity &entity1, IEntity &entity2);
 };
 
-#endif // COLLISION_HPP
+#endif// COLLISION_HPP

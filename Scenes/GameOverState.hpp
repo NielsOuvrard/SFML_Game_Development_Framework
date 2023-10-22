@@ -5,8 +5,8 @@
 #ifndef GAMEOVERSTATE_HPP
 #define GAMEOVERSTATE_HPP
 
+#include "IGameState.hpp"// Include the base game state class
 #include <SFML/Graphics.hpp>
-#include "IGameState.hpp" // Include the base game state class
 
 class GameOverState : public IGameState
 {
@@ -26,4 +26,4 @@ private:
     // Add any other private members or methods relevant to the game over state
 };
 
-#endif // GAMEOVERSTATE_HPP
+#endif// GAMEOVERSTATE_HPP

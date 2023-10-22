@@ -5,10 +5,10 @@
 #ifndef RESOURCEMANAGER_HPP
 #define RESOURCEMANAGER_HPP
 
-#include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
-#include <string>
+#include <SFML/Graphics.hpp>
 #include <map>
+#include <string>
 
 class ResourceManager
 {
@@ -35,4 +35,4 @@ private:
     // Add any other resource types and data structures as needed
 };
 
-#endif // RESOURCEMANAGER_HPP
+#endif// RESOURCEMANAGER_HPP

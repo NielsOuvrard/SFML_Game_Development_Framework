@@ -20,26 +20,21 @@ Player::Player()
 
 void Player::update()
 {
-    if (clock.getElapsedTime().asSeconds() > 0.1f)
-    {
-        if (moveUp)
-        {
+    if (clock.getElapsedTime().asSeconds() > 0.1f) {
+        if (moveUp) {
             currentFrame++;
         }
-        else
-        {
+        else {
             currentFrame--;
         }
-        if (currentFrame == 4)
-        {
+        if (currentFrame == 4) {
             moveUp = false;
         }
-        if (currentFrame == 0)
-        {
+        if (currentFrame == 0) {
             moveUp = true;
         }
         sprite.setTextureRect(sf::IntRect(
-            100 + (currentFrame * 33), 0, 33, 18));
+                100 + (currentFrame * 33), 0, 33, 18));
         clock.restart();
     }
     // Update the Player's position, health, etc. here

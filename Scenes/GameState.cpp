@@ -10,7 +10,7 @@
 
 #ifndef GAME_HPP
 #include "Game.hpp"
-#endif // GAME_HPP
+#endif// GAME_HPP
 
 // Constructor
 GameState::GameState()
@@ -22,10 +22,8 @@ GameState::GameState()
 // Handle user input
 void GameState::handleInput(sf::Event &event, Game &game)
 {
-    if (event.type == sf::Event::KeyPressed)
-    {
-        if (event.key.code == sf::Keyboard::Enter)
-        {
+    if (event.type == sf::Event::KeyPressed) {
+        if (event.key.code == sf::Keyboard::Enter) {
             std::cout << "Enter pressed" << std::endl;
 
             // std::unique_ptr<GameOverState> gameState = std::make_unique<GameOverState>();

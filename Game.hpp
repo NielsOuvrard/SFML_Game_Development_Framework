@@ -3,15 +3,15 @@
 */
 
 #pragma once
-#include <vector>
-#include <string>
 #include <iostream>
+#include <string>
+#include <vector>
 
-#include <SFML/Graphics.hpp>
-#include <SFML/Window.hpp>
-#include <SFML/System.hpp>
 #include <SFML/Audio.hpp>
+#include <SFML/Graphics.hpp>
 #include <SFML/Network.hpp>
+#include <SFML/System.hpp>
+#include <SFML/Window.hpp>
 // #include <SFML/Network.hpp>
 
 // #include "IGameState.hpp"
@@ -19,7 +19,7 @@
 
 #ifndef IGAMESTATE_HPP
 #include "IGameState.hpp"
-#endif // IGAMESTATE_HPP
+#endif// IGAMESTATE_HPP
 
 #ifndef GAME_HPP
 #define GAME_HPP
@@ -42,4 +42,4 @@ private:
     // Add any other private members or methods relevant to the game
 };
 
-#endif // GAME_HPP
+#endif// GAME_HPP

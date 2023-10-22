@@ -13,8 +13,8 @@ const int WINDOW_HEIGHT = 600;
 const std::string WINDOW_TITLE = "SFML Game";
 
 // Game settings
-const float GAME_SPEED = 60.0f; // Frames per second
-const float GRAVITY = 9.8f;     // Gravity strength
+const float GAME_SPEED = 60.0f;// Frames per second
+const float GRAVITY = 9.8f;    // Gravity strength
 
 // Player settings
 const float PLAYER_SPEED = 200.0f;
@@ -27,4 +27,4 @@ const float ENEMY_SPEED = 100.0f;
 
 // Add any other game-related constants and configuration settings here
 
-#endif // CONFIG_HPP
+#endif// CONFIG_HPP

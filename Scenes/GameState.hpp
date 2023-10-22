@@ -24,4 +24,4 @@ private:
     Player *player;
 };
 
-#endif // GAMESTATE_HPP
+#endif// GAMESTATE_HPP

@@ -24,4 +24,4 @@ public:
     virtual void render(sf::RenderWindow &window) = 0;
 };
 
-#endif // IGAMESTATE_HPP
+#endif// IGAMESTATE_HPP
