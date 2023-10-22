@@ -3,7 +3,9 @@
 */
 
 #include "IEntity.hpp"
-#include <SFML/Graphics.hpp>
+
+#ifndef PLAYER_HPP
+#define PLAYER_HPP
 
 class Player : public IEntity
 {
@@ -21,3 +23,5 @@ private:
     bool moveUp;
     int currentFrame;
 };
+
+#endif// PLAYER_HPP

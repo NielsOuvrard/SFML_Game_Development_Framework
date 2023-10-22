@@ -48,3 +48,6 @@ cmake-build-debug
 
 # binary
 sfml_basics
+
+# CLion
+.idea

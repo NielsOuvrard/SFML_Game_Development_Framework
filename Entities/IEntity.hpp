@@ -2,7 +2,10 @@
 ** Created the 02/10/2023
 */
 
-#include "Game.hpp"
+#include <SFML/Graphics.hpp>
+
+#ifndef IENTITY_HPP
+#define IENTITY_HPP
 
 class IEntity
 {
@@ -15,3 +18,5 @@ protected:
     sf::Vector2f position;
     // Other common entity properties
 };
+
+#endif// IENTITY_HPP

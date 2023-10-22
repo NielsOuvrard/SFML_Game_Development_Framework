@@ -2,6 +2,9 @@
 ** Created the 02/10/2023
 */
 
+#include "Enemy.hpp"
+#include "Game.hpp"
+#include "GameOverState.hpp"
 #include "IGameState.hpp"
 #include "Player.hpp"
 
@@ -22,6 +25,7 @@ public:
 
 private:
     Player *player;
+    Enemy *enemy;
 };
 
 #endif// GAMESTATE_HPP

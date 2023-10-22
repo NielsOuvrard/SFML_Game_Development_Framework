@@ -4,6 +4,9 @@
 
 #include "IEntity.hpp"
 
+#ifndef ENEMY_HPP
+#define ENEMY_HPP
+
 class Enemy : public IEntity
 {
 public:
@@ -20,3 +23,5 @@ private:
     bool moveUp;
     int currentFrame;
 };
+
+#endif// ENEMY_HPP

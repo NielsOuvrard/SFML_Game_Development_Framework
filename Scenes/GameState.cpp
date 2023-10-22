@@ -3,19 +3,12 @@
 */
 
 #include "GameState.hpp"
-#include "GameOverState.hpp"
-#include <SFML/Graphics.hpp>
-#include <iostream>
-#include <memory>
-
-#ifndef GAME_HPP
-#include "Game.hpp"
-#endif// GAME_HPP
 
 // Constructor
 GameState::GameState()
 {
     player = new Player();
+    enemy = new Enemy();
     // Load resources, initialize variables, and set up the main menu here
 }
 
@@ -47,4 +40,5 @@ void GameState::render(sf::RenderWindow &window)
     // window.clear(sf::Color::Black);
     // window.display();
     window.draw(player->getSprite());
+    window.draw(enemy->getSprite());
 }
